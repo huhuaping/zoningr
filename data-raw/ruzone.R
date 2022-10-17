@@ -2,4 +2,6 @@
 
 source("data-raw/load-pkg.R")
 
+
+
 usethis::use_data(ruzone, overwrite = TRUE)
