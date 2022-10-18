@@ -1,11 +1,26 @@
 Package: zoningr
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Urban and rural districts zoning for statistic in China
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
+Authors@R: 
+    person("Hu", "Huaping", email = "huhuaping01@nwsuaf.edu.cn", 
+  role = c("aut", "cre"))
 Description: More about what it does (maybe more than one line)
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: `use_mit_license()`
+BugReports: https://github.com/huhuaping/zoningr/issues
 Encoding: UTF-8
 LazyData: true
+Imports:
+  dplyr,
+  stringr,
+  tibble,
+  magrittr,
+  glue,
+  here,
+  rvest,
+  httr
+Suggests:
+  logr
+RoxygenNote: 7.1.1
+Roxygen: list(markdown = TRUE)
