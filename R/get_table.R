@@ -1,5 +1,4 @@
-## code to prepare `get_table` dataset goes here
-#' Title
+#' Get table giving on the `url` and depth digits of structure
 #'
 #' @param url character.
 #' @param len integer. short coding digits.
@@ -10,6 +9,8 @@
 #' @import stringr
 #' @importFrom tibble as_tibble
 #' @importFrom magrittr %>%
+#'
+#' @encoding UTF-8
 #'
 #' @return data.frame
 #' @export get.tbl
