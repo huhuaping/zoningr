@@ -6,5 +6,9 @@ require(here)
 require(glue)
 require(httr)
 require(rvest)
+require(logr)
+library('dplyr')
+library('stringr')
+
 
 

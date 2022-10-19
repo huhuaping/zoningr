@@ -73,7 +73,7 @@ get.tbl <- function(url, len){
   } else if (stat_code == 200L){
     out <- get %>%
       rvest::read_html() %>%
-      rvest::html_table(., header = T) %>%
+      rvest::html_table(., header = T,convert = FALSE) %>%
       .[[5]] %>%
       as_tibble() %>%
       dplyr::mutate_all(., as.character) %>%
