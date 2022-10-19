@@ -39,10 +39,20 @@ head(zone_street)
 #> 6 北京     11    http://www.stats… 1101  市辖… 1101… 东城… 01        1101… 东四…
 ```
 
-## 数据来源
+## 数据说明
 
 数据集抓取自中国统计局官网
 统计用区划和城乡划分代码（2021年）：[链接](http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/)。
+
+具体各层级数据集分别为：
+
+-   地市级数据集为`zone_city`
+
+-   区/县级数据集为`zone_district`
+
+-   乡/镇/街道级数据集为`zone_street`
+
+-   村组/居委会级数据集为`zone_neighbor`
 
 ## 抓取策略
 
@@ -74,3 +84,15 @@ n5 <- nrow(zone_neighbor)
 print(c(n4,n5))
 #> [1]  41636 633806
 ```
+
+具体各层级数据集抓取代码分别为：
+
+-   省级数据集抓取代码为`data-raw/read_province.r`
+
+-   地市级数据集抓取代码为`data-raw/scrape_city.r`
+
+-   区/县级数据集抓取代码为`data-raw/scrape_district.r`
+
+-   乡/镇/街道级数据集抓取代码为`data-raw/scrape_street.r`
+
+-   村组/居委会级数据集抓取代码为`data-raw/scrape_neighbor.r`

@@ -59,6 +59,9 @@ for (i in 1:page){
 # write data raw
 out_path <- "data-raw/data-sql/zone5-neighbor.rds"
 write_rds(tbl_out, out_path)
+## the file size is larger than 50M,
+## thus you should compress the data
+saveRDS(tbl_out, out_path, compress = T)
 
 # ===== Proc 2: pgk data set construction=====
 
